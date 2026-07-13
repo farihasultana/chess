@@ -1,8 +1,10 @@
-// filepath: /media/fariha/Android studio/chess/backend1/src/index.ts
-const { WebSocketServer } = require('ws');
+// filep
+ import { WebSocketServer } from'ws';  
+                 
 import process = require('node:process');
 import type { WebSocket } from 'ws';
-const { GameManager } = require('./GameManager');
+import {GameManager} from './GameManager.js'
+
 
 const wss = new WebSocketServer({ port: 8080 });
 const gameManager = new GameManager();
